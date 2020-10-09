@@ -1,0 +1,188 @@
+@charset "UTF-8";
+body,
+div,
+ul,
+li,
+span,
+input {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: #999;
+  text-decoration-line: none;
+}
+
+img {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#topNav {
+  height: 30px;
+  line-height: 30px;
+  width: 100%;
+  background-color: #000;
+  color: #999;
+  font-size: 12px;
+  border-bottom: 1px solid;
+}
+
+.topNavLeft {
+  display: flex;
+  justify-content: space-between;
+}
+
+.topNavLeft1 .login {
+  margin-left: 16px;
+}
+
+.topNavLeft1 .sep {
+  padding: 0 10px;
+  color: #000;
+}
+
+.topNavWarp {
+  width: 1090px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.topNavLeft2 a {
+  position: relative;
+  padding-left: 30px;
+}
+
+.m-notice {
+  position: absolute;
+  top: 35px;
+  left: -14px;
+  padding: 5px 5px 0;
+  display: block;
+  border: 1px solid #ededee;
+  text-align: center;
+  color: #000;
+}
+
+.text {
+  display: inline-block;
+  font-size: 14px;
+  padding: 4px 0;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+#downlode {
+  width: 116px;
+  height: 116px;
+}
+
+.topNavRight {
+  display: flex;
+  justify-items: flex-start;
+  justify-content: flex-end;
+}
+
+.toplevel {
+  padding: 0 14px 0 8px;
+}
+
+.topNavRight .dropmenu .topNavHolder {
+  position: relative;
+  padding: 0 24px 0 16px;
+}
+
+.topNavHolder .arr {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  margin-top: 0px;
+  width: 0px;
+  height: 0px;
+  border-color: #999 transparent transparent;
+  border-width: 4px 4px 0;
+  border-style: solid;
+  z-index: 44;
+}
+
+.dropmenu {
+  position: relative;
+}
+
+.topNavRight .mcDropMenu {
+  position: absolute;
+  left: -1px;
+  top: 30px;
+  background-color: #fff;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12);
+  padding: 4px 15px 12px 14px;
+}
+
+.mcDropMenu a {
+  display: block;
+  font-size: 12px;
+  color: #666;
+  height: 28px;
+  line-height: 28px;
+  cursor: pointer;
+  white-space: nowrap;
+  width: 88px;
+  position: relative;
+}
+
+.bot-line {
+  border-bottom: 1px solid #eaeaea;
+}
+
+.mcDropMenu .left-pad {
+  padding-left: 20px;
+  width: 72px;
+}
+
+#topNav .w-icon {
+  position: absolute;
+  left: 0;
+  top: 7px;
+  width: 14px;
+  height: 14px;
+  background-image: url(../../images/icon-精灵图.png);
+}
+
+.w-icon-contact {
+  background-position: -5px -290px;
+}
+
+.w-icon-help {
+  background-position: -5px -324px;
+}
+
+.w-icon-rule {
+  background-position: -5px -351px;
+}
+
+.act-icon-prp {
+  position: absolute;
+  left: 0;
+  top: 7px;
+  width: 14px;
+  height: 14px;
+  background-image: url(../../images/ba93f103-e5c3-4184-9800-930c25486e4d_52_52.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.mcDropMenu {
+  display: none;
+}
+
+.m-notice {
+  display: none;
+}
+
+/*# sourceMappingURL=top.css.map */

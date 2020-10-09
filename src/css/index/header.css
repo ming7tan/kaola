@@ -1,0 +1,176 @@
+@charset "UTF-8";
+#docHead,
+.docHeadWarp {
+  position: relative;
+  height: 100px;
+}
+
+.docHeadWarp {
+  width: 1090px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+#docHead .logo_kaola_new {
+  position: absolute;
+  left: 0;
+  top: 20px;
+  width: 330px;
+  height: 65px;
+  background-image: url(../../images/logo_kaola_newX2.png);
+  background-repeat: no-repeat;
+  background-size: auto 65px;
+}
+
+.m-searchiptbox {
+  position: absolute;
+  left: 343px;
+  top: 33px;
+  z-index: 73;
+  color: #333;
+}
+
+#docHead #topsearch {
+  width: 510px;
+  height: 40px;
+  padding-left: 1px;
+  background-color: #ff2337;
+  border-radius: 40px;
+}
+
+#topsearch .wrap {
+  float: left;
+  margin: 2px 1px;
+  padding: 6px 39px 5px 30px;
+  background-color: #fff;
+  border-radius: 24px 0 0 24px;
+}
+
+.topSearchInput {
+  width: 410px;
+  height: 24px;
+  line-height: 24px;
+  border: 0;
+  font-size: 13px;
+}
+
+#topsearch .topsearchboxBackGround {
+  width: 60px;
+  height: 40px;
+  background: #ff2337;
+  background-image: linear-gradient(270deg, #ff2e64, #ff0003);
+  border-radius: 40px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#topSearchBtn {
+  display: inline-block;
+  height: 40px;
+  width: 50px;
+  font-size: 19px;
+  line-height: 40px;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 5px;
+  background: url(../../images/search1.png) no-repeat 50%;
+}
+
+#topsearch .w-icon-26 {
+  position: absolute;
+  left: 10px;
+  top: 13px;
+  background-image: url(../../images/icon-精灵图.png);
+  width: 14px;
+  height: 14px;
+  background-position: -466px -667px;
+}
+
+#j-newcart_btn {
+  display: block;
+  position: absolute;
+  right: 76px;
+  top: 33px;
+  width: 106px;
+  height: 36px;
+  background-color: #fff;
+  line-height: 36px;
+  font-size: 14px;
+  text-align: center;
+  border-radius: 36px;
+  border: 2px solid #ff1e32;
+  color: #333333;
+}
+
+#j-newcart_btn .shop-cart-icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 2px;
+  margin-bottom: -5px;
+  background-image: url(../../images/shop-cart.png);
+}
+
+#j-newcart_btn .wrap {
+  display: inline-block;
+  padding-left: 6px;
+  background: none;
+  vertical-align: middle;
+}
+
+#j-newcart_btn:hover {
+  color: #ff1e32;
+  background-color: #fff4f5;
+}
+
+.navitm-cats {
+  float: left;
+  height: 40px;
+  width: 164px;
+  background: red;
+  background: -webkit-linear-gradient(90deg, red, #ff3264);
+  background: linear-gradient(90deg, red, #ff3264);
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  padding-left: 0;
+  overflow: visible;
+}
+
+#topTab {
+  width: 1090px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+}
+
+#funcTab {
+  display: flex;
+  justify-content: space-around;
+}
+
+#funcTab .active .toplevel {
+  color: #ff1e32;
+}
+
+#funcTab .navitm {
+  height: 40px;
+  line-height: 40px;
+  overflow: hidden;
+  padding: 0 20px;
+}
+
+#funcTab .navitm a {
+  display: block;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 700;
+  color: #000;
+}
+
+/*# sourceMappingURL=header.css.map */
