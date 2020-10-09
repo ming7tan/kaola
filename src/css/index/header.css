@@ -1,5 +1,4 @@
 @charset "UTF-8";
-#docHead,
 .docHeadWarp {
   position: relative;
   height: 100px;
@@ -12,7 +11,7 @@
   justify-content: space-around;
 }
 
-#docHead .logo_kaola_new {
+.docHeadWarp .logo_kaola_new {
   position: absolute;
   left: 0;
   top: 20px;
@@ -23,7 +22,7 @@
   background-size: auto 65px;
 }
 
-.m-searchiptbox {
+.docHeadWarp .m-searchiptbox {
   position: absolute;
   left: 343px;
   top: 33px;
@@ -128,20 +127,6 @@
   background-color: #fff4f5;
 }
 
-.navitm-cats {
-  float: left;
-  height: 40px;
-  width: 164px;
-  background: red;
-  background: -webkit-linear-gradient(90deg, red, #ff3264);
-  background: linear-gradient(90deg, red, #ff3264);
-  color: #fff;
-  font-size: 14px;
-  text-align: center;
-  padding-left: 0;
-  overflow: visible;
-}
-
 #topTab {
   width: 1090px;
   margin: 0 auto;
@@ -171,6 +156,45 @@
   font-size: 15px;
   font-weight: 700;
   color: #000;
+}
+
+.navitm-cats {
+  float: left;
+  height: 40px;
+  line-height: 40px;
+  width: 164px;
+  background: red;
+  background: linear-gradient(90deg, red, #ff3264);
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  padding-left: 0;
+  overflow: visible;
+}
+
+#topCats .toplevel {
+  z-index: 99;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+  border-bottom: 1px solid #ff5160;
+}
+
+.navitm-cats .lineicon {
+  display: inline-block;
+  margin: 0 24px 0 15px;
+  width: 15px;
+  height: 12px;
+  padding-top: 14px;
+  overflow: hidden;
+}
+
+.navitm-cats .lineicon i {
+  width: 15px;
+  height: 0;
+  border-top: 2px solid #ddd;
+  display: block;
+  margin-bottom: 3px;
 }
 
 /*# sourceMappingURL=header.css.map */

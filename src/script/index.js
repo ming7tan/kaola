@@ -1,4 +1,4 @@
-// 轮播图
+// banner图轮播
 ! function($) {
     class Lunbo {
         constructor() {
@@ -77,3 +77,67 @@
     }
     new Lunbo().init();
 }(jQuery)
+
+// 二级菜单
+! function($) {
+    // 1.鼠标经过li ,cartlist显示，否则隐藏
+    $('#menu li').hover(function() {
+        $(this).addClass('active').siblings().removeClass('active');
+        $('.cartlist').show();
+
+        // 3.切换li元素，cartlist里面的内容跟着切换(索引匹配)
+        $('.cartlist .item').eq($(this).index()).show().siblings().hide();
+
+        // 4.切换li元素，cartlist始终全部显示
+        $(window).on('scroll', function() {
+            let bannertop = $('.navitm-cats').offset().top; //banner的top
+            // let scrolltop = $(window).scrollTop(); //滚动条的top值
+            // if (scrolltop > bannertop) {
+            //     $('.cartlist').css({
+            //         top: scrolltop - bannertop
+            //     });
+            // } else {
+            $('.cartlist').css({
+                top: 0
+            });
+            // }
+        })
+
+    }, function() {
+        $('.cartlist').hide();
+    });
+
+    // 2.cartlist显示，鼠标经过cartlist，显示自身，否则隐藏
+    $('.cartlist').hover(function() {
+        $(this).show();
+    }, function() {
+        $(this).hide();
+    });
+}(jQuery)
+
+// 顶部悬浮
+! function($) {
+    $(window).on('scroll', function() {
+        let $top = $(window).scrollTop(); //滚动条顶部的偏移
+        if ($top >= 200) {
+            $('#docHead').addClass('topTabBoxFixed')
+                // $('.topTabBoxFixed').css({ "position": "fixed", "left": "0", "top": "0", "width": "100%", "height": "50px", "backgrond": "#fff", })
+        } else {
+            $('#docHead').removeClass('topTabBoxFixed')
+
+        }
+    })
+}(jQuery)
+
+// 热卖品牌点击关注
+$(".follow").click(function() {
+    $(this).addClass('followed'),
+        $(this).parent(".pic").children(".toast").stop(true).animate({
+            opacity: 1
+        })
+})
+$(".follow").on('mouseout', function() {
+    $(".toast").stop(true).animate({
+        opacity: 0
+    })
+})

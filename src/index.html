@@ -7,10 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes" />
     <meta name="description" content="考拉海购-阿里巴巴旗下以跨境业务为主的会员电商，主打官方自营，全球直采的模式，为会员精选全球品质好货，保证极致性价比，全方位服务黑卡会员。" />
     <meta name="Keywords" content="跨境,海淘,进口,母婴用品,美妆个护,美食保健,美妆个护,海淘,商城" />
-    <link rel="stylesheet" href="../src/css/index/top.css">
-    <link rel="stylesheet" href="../src/css/index/header.css">
+    <link rel="stylesheet" href="css/index/top.css">
+    <link rel="stylesheet" href="css/index/header.css">
     <link rel="stylesheet" href="css/index/banner.css">
     <link rel="stylesheet" href="css/index/footer.css">
+    <link rel="stylesheet" href="css/index/main.css">
 </head>
 
 <body>
@@ -22,10 +23,10 @@
                     <span class="welcom">考拉欢迎你！</span>
                     <a href="login.html" class="login">登录</a>
                     <span class="sep">|</span>
-                    <a href="registry.html" target="_blank">免费注册</a>
+                    <a href="registry.html" target="_blank" class="registry">免费注册</a>
                 </div>
                 <div class="topNavLeft2">
-                    <a href="index.html">手机考拉
+                    <a href="index.html" class="phone">手机考拉
                 <span class="m-notice">
                     <img id="downlode" src="https://kaola-haitao.oss.kaolacdn.com/314dd8b1-a77c-4897-bb9e-5237b9200b65T2001192035_180_180.png" alt="">
                     <strong class="text">新人下载APP
@@ -37,10 +38,10 @@
             </div>
             <ul class="topNavRight">
                 <li>
-                    <a href="javascript:;" class="toplevel" style="padding:0 14px 0 8px;">每日签到</a>
+                    <a href="javascript:;" class="toplevel topl" style="padding:0 14px 0 8px;">每日签到</a>
                 </li>
                 <li>
-                    <a href="javascript:;" class="toplevel">我的订单</a>
+                    <a href="javascript:;" class="toplevel topl">我的订单</a>
                 </li>
                 <li class="dropmenu">
                     <div class="mcDropMenuBox">
@@ -158,7 +159,7 @@
                             </a>
                         </div>
                 </li>
-                <li class="toplevel">
+                <li class="toplevel topl">
                     <a href="javascript:;">视频内容</a>
                 </li>
             </ul>
@@ -197,7 +198,96 @@
                             <!-- 二级导航 -->
                             <div id="topCats" class="navitm-cats">
                                 <div class="toplevel">
+                                    <div class="lineicon">
+                                        <i></i>
+                                        <i></i>
+                                        <i></i>
+                                    </div>
                                     <span>所有分类</span>
+                                </div>
+                                <div id="menu">
+                                    <ul class="catitmlst j-catmenu f-switch-catitems">
+                                        <li class="catli j-catli multi-icon-catli">
+                                            <img class="icon" src="images/menu1.png" alt="">
+                                            <img class="icon iconhv" src="images/menu12.png" alt="">
+                                            <span class="t">美容彩妆</span>
+                                            <i class="naviconfont arr"></i>
+                                        </li>
+                                        <li class="catli j-catli multi-icon-catli">
+                                            <img class="icon" src="images/menu1.png" alt="">
+                                            <img class="icon iconhv" src="images/menu12.png" alt="">
+                                            <span class="t">母婴儿童</span>
+                                            <i class="naviconfont arr"></i>
+                                        </li>
+                                        <li class="catli j-catli multi-icon-catli">
+                                            <img class="icon" src="images/menu1.png" alt="">
+                                            <img class="icon iconhv" src="images/menu12.png" alt="">
+                                            <span class="t">营养保健</span>
+                                            <i class="naviconfont arr"></i>
+                                        </li>
+                                        <li class="catli j-catli multi-icon-catli">
+                                            <img class="icon" src="images/menu1.png" alt="">
+                                            <img class="icon iconhv" src="images/menu12.png" alt="">
+                                            <span class="t">数码家电</span>
+                                            <i class="naviconfont arr"></i>
+                                        </li>
+                                        <li class="catli j-catli multi-icon-catli">
+                                            <img class="icon" src="images/menu1.png" alt="">
+                                            <img class="icon iconhv" src="images/menu12.png" alt="">
+                                            <span class="t">个户家清</span>
+                                            <i class="naviconfont arr"></i>
+                                        </li>
+                                        <li class="catli j-catli multi-icon-catli">
+                                            <img class="icon" src="images/menu1.png" alt="">
+                                            <img class="icon iconhv" src="images/menu12.png" alt="">
+                                            <span class="t">服饰鞋靴</span>
+                                            <i class="naviconfont arr"></i>
+                                        </li>
+                                        <li class="catli j-catli multi-icon-catli">
+                                            <img class="icon" src="images/menu1.png" alt="">
+                                            <img class="icon iconhv" src="images/menu12.png" alt="">
+                                            <span class="t">运动户外</span>
+                                            <i class="naviconfont arr"></i>
+                                        </li>
+                                        <li class="catli j-catli multi-icon-catli">
+                                            <img class="icon" src="images/menu1.png" alt="">
+                                            <img class="icon iconhv" src="images/menu12.png" alt="">
+                                            <span class="t">轻奢</span>
+                                            <i class="naviconfont arr"></i>
+                                        </li>
+                                        <li class="catli j-catli multi-icon-catli">
+                                            <img class="icon" src="images/menu1.png" alt="">
+                                            <img class="icon iconhv" src="images/menu12.png" alt="">
+                                            <span class="t">家居生活</span>
+                                            <i class="naviconfont arr"></i>
+                                        </li>
+                                        <li class="catli j-catli multi-icon-catli">
+                                            <img class="icon" src="images/menu1.png" alt="">
+                                            <img class="icon iconhv" src="images/menu12.png" alt="">
+                                            <span class="t">环球美食</span>
+                                            <i class="naviconfont arr"></i>
+                                        </li>
+                                        <li class="catli j-catli multi-icon-catli">
+                                            <img class="icon" src="images/menu1.png" alt="">
+                                            <img class="icon iconhv" src="images/menu12.png" alt="">
+                                            <span class="t">宠物生活</span>
+                                            <i class="naviconfont arr"></i>
+                                        </li>
+                                    </ul>
+                                    <div class="cartlist">
+                                        <div class="item">第1块内容</div>
+                                        <div class="item">第2块内容</div>
+                                        <div class="item">第1块内容</div>
+                                        <div class="item">第2块内容</div>
+                                        <div class="item">第1块内容</div>
+                                        <div class="item">第2块内容</div>
+                                        <div class="item">第1块内容</div>
+                                        <div class="item">第2块内容</div>
+                                        <div class="item">第1块内容</div>
+                                        <div class="item">第2块内容</div>
+                                        <div class="item">第1块内容</div>
+                                        <div class="item">第2块内容</div>
+                                    </div>
                                 </div>
                             </div>
 
@@ -254,13 +344,192 @@
                             <a href=""></a>
                         </li>
                     </ol>
-                    <a href="" class="prev"></a>
-                    <a href="" class="next"></a>
+                    <a href="javascript:;" class="prev"></a>
+                    <a href="javascript:;" class="next"></a>
                     <div class="m-sellpoint">
 
                     </div>
                 </div>
+                <!-- main(楼层) -->
+                <div class="g-box pc-index-box" id="j-box">
+                    <div class="m-floor j-floorflag">
+                        <div class="m-module">
+                            <article class="m-productfloor pc-index-module">
+                                <div class="w-tit1 w-tit1-1 clearfix w-title-line">
+                                    <h2 class="tit">
+                                        <span class="big">运动户外</span>
+                                    </h2>
+                                    <ul class="w-taglist clearfix">
+                                        <li class="first">热搜词:</li>
+                                        <li class="last">
+                                            <a href="javascript:;" target="_blank" class="itm">阿迪达斯</a>
+                                        </li>
+                                        <li class="last">
+                                            <a href="javascript:;" target="_blank" class="itm">耐克</a> </li>
+                                        <li class="last">
+                                            <a href="javascript:;" target="_blank" class="itm">斯凯奇</a>
+                                        </li>
+                                        <li class="last">
+                                            <a href="javascript:;" target="_blank" class="itm">安德玛</a>
+                                        </li>
+                                    </ul>
+                                    <a href="javascript:;" class="u-btn-more">更多好货
+                                        <i class="iconfont"></i>
+                                    </a>
+                                </div>
+                                <div class="cont clearfix">
+                                    <div class="partl">
+                                        <a class="pic picl" href="javascript:;">
+                                            <img class="img-lazyload opacity1 u-loaded" src="images/main1.jpg" alt="">
+                                        </a>
+                                        <ul class="w-secondlist clearfix">
+                                            <li>
+                                                <a class="itm" href="javascript:;">
+                                                    <span class="txt">男运动鞋</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="itm" href="javascript:;">
+                                                    <span class="txt">女运动鞋</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="itm" href="javascript:;">
+                                                    <span class="txt">运动服饰</span>
+                                                </a>
+                                            </li>
 
+                                            <li>
+                                                <a class="itm" href="javascript:;">
+                                                    <span class="txt">速干T恤</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="itm" href="javascript:;">
+                                                    <span class="txt">健身服饰</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="itm" href="javascript:;">
+                                                    <span class="txt">户外背包</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="partm">
+                                        <ul class="w-activlist">
+                                            <li class="itm1">
+                                                <a class="pic" href="javascript:;">
+                                                    <h3 class="tit">斯凯奇新品上市</h3>
+                                                    <p class="desc s-fc2">热门鞋款低至5.7折</p>
+                                                    <img class="img-lazyload u-loaded" src="images/itm1.jpg" alt="">
+                                                </a>
+                                            </li>
+                                            <li class="itm2">
+                                                <a class="pic" href="javascript:;">
+                                                    <h3 class="tit">斯凯奇新品上市</h3>
+                                                    <p class="desc s-fc2">热门鞋款低至5.7折</p>
+                                                    <img class="img-lazyload u-loaded" src="images/itm1.jpg" alt="">
+                                                </a>
+                                            </li>
+                                            <li class="itm3">
+                                                <a class="pic" href="javascript:;">
+                                                    <h3 class="tit">斯凯奇新品上市</h3>
+                                                    <p class="desc s-fc2">热门鞋款低至5.7折</p>
+                                                    <img class="img-lazyload u-loaded" src="images/itm1.jpg" alt="">
+                                                </a>
+                                            </li>
+                                            <li class="itm4">
+                                                <a class="pic" href="javascript:;">
+                                                    <h3 class="tit">斯凯奇新品上市</h3>
+                                                    <p class="desc s-fc2">热门鞋款低至5.7折</p>
+                                                    <img class="img-lazyload u-loaded" src="images/itm1.jpg" alt="">
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="party m-prolist"></div>
+                                </div>
+                                <div class="w-logolist clearfix coverMarginBottom">
+                                    <div class="txt">热卖品牌</div>
+                                    <div class="brandListContainer">
+                                        <a class="pic" href="javascript:;">
+                                            <img class="img-lazyload opacity1 u-loaded" src="images/adidas.jpg">
+                                            <span class="follow"></span>
+                                            <span class="toast">已关注</span>
+                                        </a>
+                                        <a class="pic" href="javascript:;">
+                                            <img class="img-lazyload opacity1 u-loaded" src="images/adidas.jpg">
+                                            <span class="follow"></span>
+                                            <span class="toast">已关注</span>
+                                        </a>
+                                        <a class="pic" href="javascript:;">
+                                            <img class="img-lazyload opacity1 u-loaded" src="images/adidas.jpg">
+                                            <span class="follow"></span>
+                                            <span class="toast">已关注</span>
+                                        </a>
+                                        <a class="pic" href="javascript:;">
+                                            <img class="img-lazyload opacity1 u-loaded" src="images/adidas.jpg">
+                                            <span class="follow"></span>
+                                            <span class="toast">已关注</span>
+                                        </a>
+                                        <a class="pic" href="javascript:;">
+                                            <img class="img-lazyload opacity1 u-loaded" src="images/adidas.jpg">
+                                            <span class="follow"></span>
+                                            <span class="toast">已关注</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+                <!-- 左边楼梯栏 -->
+                <div class="m-module">
+                    <div class="j-regionflag">
+                        <aside id="indexleft" class="m-indexleft">
+                            <a class="topImg" href="images/louti.jpg"></a>
+                            <ul class="floor">
+                                <li>
+                                    <a class="j-floor first-floor" href="javacript:;">热门品牌</a>
+                                </li>
+                                <li>
+                                    <a class="j-floor" href="javascript:;">运动户外</a>
+                                </li>
+                                <li>
+                                    <a class="j-floor" href="javascript:;">美妆专区</a>
+                                </li>
+                                <li>
+                                    <a class="j-floor" href="javascript:;">个人家清</a>
+                                </li>
+                                <li>
+                                    <a class="j-floor" href="javascript:;">轻奢馆</a>
+                                </li>
+                                <li>
+                                    <a class="j-floor" href="javascript:;">手表配饰</a>
+                                </li>
+                                <li>
+                                    <a class="j-floor" href="javascript:;">美食生鲜</a>
+                                </li>
+                                <li>
+                                    <a class="j-floor" href="javascript:;">服饰鞋靴</a>
+                                </li>
+                                <li>
+                                    <a class="j-floor" href="javascript:;">家居生活</a>
+                                </li>
+                                <li>
+                                    <a class="j-floor" href="javascript:;">数码家电</a>
+                                </li>
+                                <li>
+                                    <a class="j-floor" href="javascript:;">母婴专区</a>
+                                </li>
+                                <li>
+                                    <a class="j-floor" href="javascript:;">营养保健</a>
+                                </li>
+                            </ul>
+                        </aside>
+                    </div>
+                </div>
                 <!-- 底部 -->
                 <div class="footBgWrap">
                     <div class="box">
@@ -291,25 +560,172 @@
                         </div>
                     </div>
                 </div>
-                <div class="footBWrap">
+                <div id="footBWrap">
                     <div class="box">
                         <div class="guideList">
                             <div class="first">
-                                <a href="index.html" class="logo_kaola_new"></a>
+                                <a href="index.html" class="logo_kaola"></a>
                                 <div class="focuson">
                                     <span class="label">关注我们</span>
-                                    <a href="https://weibo.com/u/5448480859" class="itm">
+                                    <a href="https://weibo.com/u/5448480859" class="itm itm1">
                                         <em class="w-icon follow-us-icon weibo-icon"></em>
                                         <span class="m-notice m-notice-1">
-                                        <img src="images/weibo.png" alt="">
+                                        <img src="images/erweima.png" alt="">
+                                    </span>
+                                    </a>
+                                    <a href="javascript:;" class="itm itm2">
+                                        <em class="w-icon follow-us-icon weixin-icon"></em>
+                                        <span class="m-notice m-notice-2">
+                                        <img src="images/erweima.png" alt="">
                                     </span>
                                     </a>
                                 </div>
                             </div>
                             <ul class="clearfix">
+                                <li class="f-wd100">
+                                    <dl>
+                                        <dt>
+                                            <em>考拉保障</em>
+                                        </dt>
+                                        <dd>
+                                            <a href="javascript:;">假一赔十</a>
+                                        </dd>
+                                        <dd>
+                                            <a href="javascript:;">廉政举报</a>
+                                        </dd>
+                                    </dl>
+                                </li>
+                                <li class="f-wd100">
+                                    <dl>
+                                        <dt>
+                                            <em>新手指南</em>
+                                        </dt>
+                                        <dd>
+                                            <a href="javascript:;">购物流程</a>
+                                        </dd>
+                                        <dd>
+                                            <a href="javascript:;">支付方式</a>
+                                        </dd>
+                                        <dd>
+                                            <a href="javascript:;">通关税费</a>
+                                        </dd>
+                                        <dd>
+                                            <a href="javascript:;">常见问题</a>
+                                        </dd>
+                                    </dl>
+                                </li>
+                                <li class="f-wd100">
+                                    <dl>
+                                        <dt>
+                                            <em>售后服务</em>
+                                        </dt>
+                                        <dd>
+                                            <a href="javascript:;">售后政策</a>
+                                        </dd>
+                                        <dd>
+                                            <a href="javascript:;">退货流程</a>
+                                        </dd>
+                                        <dd>
+                                            <a href="javascript:;">特色服务</a>
+                                        </dd>
+                                        <dd>
+                                            <a href="javascript:;">联系客服</a>
+                                        </dd>
 
+                                    </dl>
+                                </li>
+                                <li class="f-wd100">
+                                    <dl>
+                                        <dt>
+                                            <em>物流配送</em>
+                                        </dt>
+                                        <dd>
+                                            <a href="javascript:;">配送方式</a>
+                                        </dd>
+                                        <dd>
+                                            <a href="javascript:;">配送服务</a>
+                                        </dd>
+                                        <dd>
+                                            <a href="javascript:;">运费标准</a>
+                                        </dd>
+                                        <dd>
+                                            <a href="javascript:;">物流跟踪</a>
+                                        </dd>
+                                    </dl>
+                                </li>
+                                <li class="f-wd100">
+                                    <dl>
+                                        <dt>
+                                            <em>商家服务</em>
+                                        </dt>
+                                        <dd>
+                                            <a href="javascript:;">招商合作</a>
+                                        </dd>
+                                        <dd>
+                                            <a href="javascript:;">销售联盟</a>
+                                        </dd>
+                                        <dd>
+                                            <a href="javascript:;">商家成长</a>
+                                        </dd>
+                                    </dl>
+                                </li>
+                                <li class="f-wd100">
+                                    <dl>
+                                        <dt>
+                                            <em>关于我们</em>
+                                        </dt>
+                                        <dd>
+                                            <a href="javascript:;">联系我们</a>
+                                        </dd>
+                                        <dd>
+                                            <a href="javascript:;">CEO邮箱</a>
+                                        </dd>
+                                        <dd>
+                                            <a href="javascript:;">线下店</a>
+                                        </dd>
+                                    </dl>
+                                </li>
                             </ul>
+                            <div class="last">
+                                <img src="images/erweima.png" alt="">
+                                <span class="l-title">扫描下载手机版</span>
+                            </div>
                         </div>
+                    </div>
+                </div>
+                <div id="aboutNEST">
+                    <span class="m-license">增值电信业务经营许可证：浙B2-20160288</span>
+                    <span class="m-license">（浙）网械平台备字[2018]第00007号</span>
+                    <span class="m-license">阿里巴巴版权所有©2003-2020</span>
+                    <a href="javascript:;" style="margin-left: 10px;">隐私政策</a>
+                    <span class="sep">-</span>
+                    <a href="index.html">考拉海购</a>
+                    <br>
+                    <span class="m-license">网络文化经营许可证：浙网文（2020）4340-180号</span>
+                    <span class="m-license">浙江省网络食品销售第三方平台提供者备案：浙网食A33010006</span>
+                    <br>
+                    <a href="javascript:;">
+                        <img src="images/foot1.png" alt="">
+                    </a>
+                    <a href="javascript:;">
+                        <span style="margin-left: 5px;">浙公网安备 33010802002216号</span>
+                    </a>
+                    <a href="javascript:;">
+                        <span class="m-license">互联网药品信息服务资格证书编号（浙）-2017-0027</span>
+                    </a>
+                    <a href="javascript:;">
+                        <span class="m-license">浙ICP备16011229号</span>
+                    </a>
+                    <a href="javascript:;">
+                        <span class="m-license">自营经营者信息</span>
+                    </a>
+                    <div class="f-tac">
+                        <a href="javascript:;">
+                            <img src="images/foot2.png" alt="" class="img1">
+                        </a>
+                        <a href="javascript:;">
+                            <img src="images/foot3.png" alt="" class="img2">
+                        </a>
                     </div>
                 </div>
 

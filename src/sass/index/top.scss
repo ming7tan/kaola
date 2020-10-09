@@ -8,13 +8,25 @@ div,
 ul,
 li,
 span,
-input {
+input,
+i,
+h2,
+a {
     margin: 0;
     padding: 0;
 }
 
+body,
+html {
+    color: #333;
+}
+
 li {
     list-style: none;
+}
+
+input {
+    border: none;
 }
 
 a {
@@ -63,7 +75,7 @@ img {
     padding-left: 30px;
 }
 
-.m-notice {
+.phone .m-notice {
     position: absolute;
     top: 35px;
     left: -14px;
@@ -72,6 +84,8 @@ img {
     border: 1px solid #ededee;
     text-align: center;
     color: $color;
+    z-index: 3;
+    background-color: #fff;
 }
 
 .text {
@@ -113,7 +127,8 @@ img {
     border-color: #999 transparent transparent;
     border-width: 4px 4px 0;
     border-style: solid;
-    z-index: 44;
+    z-index: 4;
+    transition: transform .2s ease-in;
 }
 
 .dropmenu {
@@ -185,11 +200,47 @@ img {
 
 // 二级导航消失
 .mcDropMenu {
+    z-index: 1000;
     display: none;
 }
 
-.m-notice {
+#topNav .m-notice {
     display: none;
+}
+
+.login:hover,
+.registry:hover,
+.phone:hover,
+.topl:hover {
+    color: #fff;
+}
+
+.topl:hover a {
+    color: #fff;
+}
+
+#topNav .phone:hover .m-notice {
+    display: block;
 }
 
 //
+.dropmenu:hover {
+    background-color: #fff;
+}
+
+.dropmenu:hover .arr {
+    border-color: transparent transparent #333;
+}
+
+.dropmenu:hover .mcDropMenu {
+    display: block;
+}
+
+.dropmenu a:hover {
+    color: #ff1e32;
+}
+
+.dropmenu a:hover .arr {
+    // z-index: 9999999;
+    background-color: transparent transparent #ff1e32;
+}
