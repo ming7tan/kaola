@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/index/banner.css">
     <link rel="stylesheet" href="css/index/footer.css">
     <link rel="stylesheet" href="css/index/main.css">
+    <script src="script/require.js" defer async="true" data-main="script/main.js"></script>
 </head>
 
 <body>
@@ -21,12 +22,12 @@
             <div class="topNavLeft">
                 <div class="topNavLeft1">
                     <span class="welcom">考拉欢迎你！</span>
-                    <a href="login.html" class="login">登录</a>
+                    <a href="login.html" class="login topl">登录</a>
                     <span class="sep">|</span>
-                    <a href="registry.html" target="_blank" class="registry">免费注册</a>
+                    <a href="registry.html" target="_blank" class="registry topl">免费注册</a>
                 </div>
                 <div class="topNavLeft2">
-                    <a href="index.html" class="phone">手机考拉
+                    <a href="index.html" class="phone topl">手机考拉
                 <span class="m-notice">
                     <img id="downlode" src="https://kaola-haitao.oss.kaolacdn.com/314dd8b1-a77c-4897-bb9e-5237b9200b65T2001192035_180_180.png" alt="">
                     <strong class="text">新人下载APP
@@ -46,7 +47,7 @@
                 <li class="dropmenu">
                     <div class="mcDropMenuBox">
                         <a href="" class="toplevel topNavHolder ">
-                            个人中心
+                           个人中心
                             <i class="arr"></i>
                         </a>
                         <div class="mcDropMenu">
@@ -159,8 +160,8 @@
                             </a>
                         </div>
                 </li>
-                <li class="toplevel topl">
-                    <a href="javascript:;">视频内容</a>
+                <li class="toplevel ">
+                    <a href="javascript:;" class="topl">视频内容</a>
                 </li>
             </ul>
             </div>
@@ -179,6 +180,9 @@
                                     <span id="topSearchBtn"></span>
                                 </span>
                                 <span class="w-icon w-icon-26"></span>
+                            </div>
+                            <div class="m-searchhint">
+                                <ul id="searchhintlist"></ul>
                             </div>
                         </div>
                         <ul id="j-search_suggent_hintlist"></ul>
@@ -275,7 +279,58 @@
                                         </li>
                                     </ul>
                                     <div class="cartlist">
-                                        <div class="item">第1块内容</div>
+                                        <div class="item">
+                                            <div class="f-fl m-ctglist">
+                                                <div class="litb">
+                                                    <div class="underTitleMiddleLine"></div>
+                                                    <p class="title">
+                                                        <a href="list.html" target="_blank">护肤</a>
+                                                    </p>
+                                                    <div class="ctgnamebox">
+                                                        <a href="javascript:;" class="f-fcred3" target="_blank">
+                                                    洁面
+                                                </a>
+                                                        <a href="javascript:;" class="f-fcred" target="_blank">
+                                                    卸妆
+                                                </a>
+                                                        <a href="javascript:;" class="f-fcred3" target="_blank">
+                                                    爽肤水
+                                                </a>
+                                                        <a href="javascript:;" class="f-fcred3" target="_blank">
+                                                    面霜
+                                                </a>
+                                                        <a href="javascript:;" class="f-fcred" target="_blank">
+                                                    眼部护理
+                                                </a>
+                                                        <a href="javascript:;" class="f-fcred3" target="_blank">
+                                                    精华
+                                                </a>
+                                                        <a href="javascript:;" class="f-fcred" target="_blank">
+                                                    乳液/凝胶
+                                                </a>
+                                                        <a href="javascript:;" class="f-fcred" target="_blank">
+                                                    唇部护理
+                                                </a>
+                                                        <a href="javascript:;" class="f-fcred3" target="_blank">
+                                                    护肤套装
+                                                </a>
+                                                        <a href="javascript:;" class="f-fcred" target="_blank">
+                                                    精油芳疗
+                                                </a>
+                                                        <a href="javascript:;" class="f-fcred" target="_blank">
+                                                    面部护肤
+                                                </a>
+                                                        <a href="javascript:;" class="f-fcred" target="_blank">
+                                                    防晒修护
+                                                </a>
+                                                        <a href="javascript:;" class="f-fcred3" target="_blank">
+                                                    男性护肤
+                                                </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
                                         <div class="item">第2块内容</div>
                                         <div class="item">第1块内容</div>
                                         <div class="item">第2块内容</div>
@@ -292,7 +347,7 @@
                             </div>
 
                             <ul id="funcTab" class="clearfix">
-                                <li class="navitm j-navitm active">
+                                <li class="navitm j-navitm active first">
                                     <a href="" class="toplevel" target="_blank">首页</a>
                                 </li>
                                 <li class="navitm j-navitm">
@@ -346,14 +401,14 @@
                     </ol>
                     <a href="javascript:;" class="prev"></a>
                     <a href="javascript:;" class="next"></a>
-                    <div class="m-sellpoint">
+                    <!-- <div class="m-sellpoint">
 
-                    </div>
+                    </div> -->
                 </div>
                 <!-- main(楼层) -->
                 <div class="g-box pc-index-box" id="j-box">
                     <div class="m-floor j-floorflag">
-                        <div class="m-module">
+                        <div class="mmodule">
                             <article class="m-productfloor pc-index-module">
                                 <div class="w-tit1 w-tit1-1 clearfix w-title-line">
                                     <h2 class="tit">
@@ -448,7 +503,22 @@
                                             </li>
                                         </ul>
                                     </div>
-                                    <div class="party m-prolist"></div>
+                                    <div class="party m-prolist">
+                                        <h3 class="title">最新热卖
+                                            <ol>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                            </ol>
+                                        </h3>
+                                        <div class="prolist">
+                                            <ul class="itemgroup">
+
+                                            </ul>
+                                            <ul class="itemgroup"></ul>
+                                            <ul class="itemgroup"></ul>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="w-logolist clearfix coverMarginBottom">
                                     <div class="txt">热卖品牌</div>
@@ -481,56 +551,337 @@
                                     </div>
                                 </div>
                             </article>
+
+                        </div>
+                    </div>
+                    <div class="m-floor j-floorflag">
+                        <div class="mmodule">
+                            <article class="m-productfloor pc-index-module">
+                                <div class="w-tit1 w-tit1-1 clearfix w-title-line">
+                                    <h2 class="tit">
+                                        <span class="big">运动户外</span>
+                                    </h2>
+                                    <ul class="w-taglist clearfix">
+                                        <li class="first">热搜词:</li>
+                                        <li class="last">
+                                            <a href="javascript:;" target="_blank" class="itm">阿迪达斯</a>
+                                        </li>
+                                        <li class="last">
+                                            <a href="javascript:;" target="_blank" class="itm">耐克</a> </li>
+                                        <li class="last">
+                                            <a href="javascript:;" target="_blank" class="itm">斯凯奇</a>
+                                        </li>
+                                        <li class="last">
+                                            <a href="javascript:;" target="_blank" class="itm">安德玛</a>
+                                        </li>
+                                    </ul>
+                                    <a href="javascript:;" class="u-btn-more">更多好货
+                                        <i class="iconfont"></i>
+                                    </a>
+                                </div>
+                                <div class="cont clearfix">
+                                    <div class="partl">
+                                        <a class="pic picl" href="javascript:;">
+                                            <img class="img-lazyload opacity1 u-loaded" src="images/main1.jpg" alt="">
+                                        </a>
+                                        <ul class="w-secondlist clearfix">
+                                            <li>
+                                                <a class="itm" href="javascript:;">
+                                                    <span class="txt">男运动鞋</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="itm" href="javascript:;">
+                                                    <span class="txt">女运动鞋</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="itm" href="javascript:;">
+                                                    <span class="txt">运动服饰</span>
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a class="itm" href="javascript:;">
+                                                    <span class="txt">速干T恤</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="itm" href="javascript:;">
+                                                    <span class="txt">健身服饰</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="itm" href="javascript:;">
+                                                    <span class="txt">户外背包</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="partm">
+                                        <ul class="w-activlist">
+                                            <li class="itm1">
+                                                <a class="pic" href="javascript:;">
+                                                    <h3 class="tit">斯凯奇新品上市</h3>
+                                                    <p class="desc s-fc2">热门鞋款低至5.7折</p>
+                                                    <img class="img-lazyload u-loaded" src="images/itm1.jpg" alt="">
+                                                </a>
+                                            </li>
+                                            <li class="itm2">
+                                                <a class="pic" href="javascript:;">
+                                                    <h3 class="tit">斯凯奇新品上市</h3>
+                                                    <p class="desc s-fc2">热门鞋款低至5.7折</p>
+                                                    <img class="img-lazyload u-loaded" src="images/itm1.jpg" alt="">
+                                                </a>
+                                            </li>
+                                            <li class="itm3">
+                                                <a class="pic" href="javascript:;">
+                                                    <h3 class="tit">斯凯奇新品上市</h3>
+                                                    <p class="desc s-fc2">热门鞋款低至5.7折</p>
+                                                    <img class="img-lazyload u-loaded" src="images/itm1.jpg" alt="">
+                                                </a>
+                                            </li>
+                                            <li class="itm4">
+                                                <a class="pic" href="javascript:;">
+                                                    <h3 class="tit">斯凯奇新品上市</h3>
+                                                    <p class="desc s-fc2">热门鞋款低至5.7折</p>
+                                                    <img class="img-lazyload u-loaded" src="images/itm1.jpg" alt="">
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="party m-prolist">
+                                        <h3 class="title">最新热卖
+                                            <ol>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                            </ol>
+                                        </h3>
+                                        <div class="prolist">
+                                            <ul class="itemgroup">
+
+                                            </ul>
+                                            <ul class="itemgroup"></ul>
+                                            <ul class="itemgroup"></ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w-logolist clearfix coverMarginBottom">
+                                    <div class="txt">热卖品牌</div>
+                                    <div class="brandListContainer">
+                                        <a class="pic" href="javascript:;">
+                                            <img class="img-lazyload opacity1 u-loaded" src="images/adidas.jpg">
+                                            <span class="follow"></span>
+                                            <span class="toast">已关注</span>
+                                        </a>
+                                        <a class="pic" href="javascript:;">
+                                            <img class="img-lazyload opacity1 u-loaded" src="images/adidas.jpg">
+                                            <span class="follow"></span>
+                                            <span class="toast">已关注</span>
+                                        </a>
+                                        <a class="pic" href="javascript:;">
+                                            <img class="img-lazyload opacity1 u-loaded" src="images/adidas.jpg">
+                                            <span class="follow"></span>
+                                            <span class="toast">已关注</span>
+                                        </a>
+                                        <a class="pic" href="javascript:;">
+                                            <img class="img-lazyload opacity1 u-loaded" src="images/adidas.jpg">
+                                            <span class="follow"></span>
+                                            <span class="toast">已关注</span>
+                                        </a>
+                                        <a class="pic" href="javascript:;">
+                                            <img class="img-lazyload opacity1 u-loaded" src="images/adidas.jpg">
+                                            <span class="follow"></span>
+                                            <span class="toast">已关注</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </article>
+
+                        </div>
+                    </div>
+                    <!-- 猜你喜欢 -->
+                    <div class="j-regionflag">
+                        <div id="guess" class="indexNewRecomWrap">
+                            <h4 class="newRecomTitle">猜你喜欢
+                                <b>根据你的浏览记录推荐的商品</b>
+                            </h4>
+                            <div class="m-reclst clearfix">
+                                <div class="newRecomItemWrap newRecomItemWrap-1">
+                                    <a class="itemImg" href="javascript:;">
+                                        <img src="https://kaola-pop.oss.kaolacdn.com/7c95907be6e146ccaf56eb6253d34616_800_800.jpg?imageView&thumbnail=430x430" alt="">
+                                    </a>
+                                    <p class="itemTitle">
+                                        <a class="prottitle" href="javascript:;">【紫熨斗黑眼圈克星】L'ORÉAL 欧莱雅紫熨斗眼霜玻尿酸去除黑眼圈眼袋保湿淡化细纹抗皱中小样7.5ml</a>
+                                    </p>
+                                    <div class="itemInfo clearfix">
+                                        <p class="price">
+                                            <span class="symbol">¥</span>35
+                                            <span class="marprice">¥ <del>89</del></span>
+
+                                        </p>
+                                        <a href="javascript:;" class="comment">104571 人已评价</a>
+                                    </div>
+                                </div>
+                                <div class="newRecomItemWrap newRecomItemWrap-1">
+                                    <a class="itemImg" href="javascript:;">
+                                        <img src="https://kaola-pop.oss.kaolacdn.com/7c95907be6e146ccaf56eb6253d34616_800_800.jpg?imageView&thumbnail=430x430" alt="">
+                                    </a>
+                                    <p class="itemTitle">
+                                        <a class="prottitle" href="javascript:;">【紫熨斗黑眼圈克星】L'ORÉAL 欧莱雅紫熨斗眼霜玻尿酸去除黑眼圈眼袋保湿淡化细纹抗皱中小样7.5ml</a>
+                                    </p>
+                                    <div class="itemInfo clearfix">
+                                        <p class="price">
+                                            <span class="symbol">¥</span>35
+                                            <span class="marprice">¥ <del>89</del></span>
+
+                                        </p>
+                                        <a href="javascript:;" class="comment">104571 人已评价</a>
+                                    </div>
+                                </div>
+                                <div class="newRecomItemWrap newRecomItemWrap-1">
+                                    <a class="itemImg" href="javascript:;">
+                                        <img src="https://kaola-pop.oss.kaolacdn.com/7c95907be6e146ccaf56eb6253d34616_800_800.jpg?imageView&thumbnail=430x430" alt="">
+                                    </a>
+                                    <p class="itemTitle">
+                                        <a class="prottitle" href="javascript:;">【紫熨斗黑眼圈克星】L'ORÉAL 欧莱雅紫熨斗眼霜玻尿酸去除黑眼圈眼袋保湿淡化细纹抗皱中小样7.5ml</a>
+                                    </p>
+                                    <div class="itemInfo clearfix">
+                                        <p class="price">
+                                            <span class="symbol">¥</span>35
+                                            <span class="marprice">¥ <del>89</del></span>
+
+                                        </p>
+                                        <a href="javascript:;" class="comment">104571 人已评价</a>
+                                    </div>
+                                </div>
+                                <div class="newRecomItemWrap newRecomItemWrap-1">
+                                    <a class="itemImg" href="javascript:;">
+                                        <img src="https://kaola-pop.oss.kaolacdn.com/7c95907be6e146ccaf56eb6253d34616_800_800.jpg?imageView&thumbnail=430x430" alt="">
+                                    </a>
+                                    <p class="itemTitle">
+                                        <a class="prottitle" href="javascript:;">【紫熨斗黑眼圈克星】L'ORÉAL 欧莱雅紫熨斗眼霜玻尿酸去除黑眼圈眼袋保湿淡化细纹抗皱中小样7.5ml</a>
+                                    </p>
+                                    <div class="itemInfo clearfix">
+                                        <p class="price">
+                                            <span class="symbol">¥</span>35
+                                            <span class="marprice">¥ <del>89</del></span>
+
+                                        </p>
+                                        <a href="javascript:;" class="comment">104571 人已评价</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+
                 <!-- 左边楼梯栏 -->
-                <div class="m-module">
-                    <div class="j-regionflag">
-                        <aside id="indexleft" class="m-indexleft">
-                            <a class="topImg" href="images/louti.jpg"></a>
-                            <ul class="floor">
-                                <li>
-                                    <a class="j-floor first-floor" href="javacript:;">热门品牌</a>
-                                </li>
-                                <li>
-                                    <a class="j-floor" href="javascript:;">运动户外</a>
-                                </li>
-                                <li>
-                                    <a class="j-floor" href="javascript:;">美妆专区</a>
-                                </li>
-                                <li>
-                                    <a class="j-floor" href="javascript:;">个人家清</a>
-                                </li>
-                                <li>
-                                    <a class="j-floor" href="javascript:;">轻奢馆</a>
-                                </li>
-                                <li>
-                                    <a class="j-floor" href="javascript:;">手表配饰</a>
-                                </li>
-                                <li>
-                                    <a class="j-floor" href="javascript:;">美食生鲜</a>
-                                </li>
-                                <li>
-                                    <a class="j-floor" href="javascript:;">服饰鞋靴</a>
-                                </li>
-                                <li>
-                                    <a class="j-floor" href="javascript:;">家居生活</a>
-                                </li>
-                                <li>
-                                    <a class="j-floor" href="javascript:;">数码家电</a>
-                                </li>
-                                <li>
-                                    <a class="j-floor" href="javascript:;">母婴专区</a>
-                                </li>
-                                <li>
-                                    <a class="j-floor" href="javascript:;">营养保健</a>
-                                </li>
-                            </ul>
-                        </aside>
+                <!-- <div class="m-module"> -->
+                <div class="j-regionflag">
+                    <aside id="indexleft" class="m-indexleft">
+                        <a class="topImg" href="javascript:;">
+                            <img src="images/louti.jpg" alt="">
+                        </a>
+                        <ul class="channel">
+                            <li>
+                                <a class="first-floor" href="javacript:;">热门品牌</a>
+                            </li>
+                        </ul>
+                        <ul class="floor">
+                            <li>
+                                <a class="j-floor" href="javascript:;">运动户外</a>
+                            </li>
+                            <li>
+                                <a class="j-floor" href="javascript:;">美妆专区</a>
+                            </li>
+                            <li>
+                                <a class="j-floor" href="javascript:;">个人家清</a>
+                            </li>
+                            <li>
+                                <a class="j-floor" href="javascript:;">轻奢馆</a>
+                            </li>
+                            <li>
+                                <a class="j-floor" href="javascript:;">手表配饰</a>
+                            </li>
+                            <li>
+                                <a class="j-floor" href="javascript:;">美食生鲜</a>
+                            </li>
+                            <li>
+                                <a class="j-floor" href="javascript:;">服饰鞋靴</a>
+                            </li>
+                            <li>
+                                <a class="j-floor" href="javascript:;">家居生活</a>
+                            </li>
+                            <li>
+                                <a class="j-floor" href="javascript:;">数码家电</a>
+                            </li>
+                            <li>
+                                <a class="j-floor" href="javascript:;">母婴专区</a>
+                            </li>
+                            <li>
+                                <a class="j-floor" href="javascript:;">营养保健</a>
+                            </li>
+                        </ul>
+                        <a href="" class="bottomImg">
+                            <img src="https://kaola-haitao.oss.kaolacdn.com/e28e94b4-d6c2-4132-9397-51ba4dc687b6T2002192233_99_198.png" alt="">
+                        </a>
+                    </aside>
+                </div>
+                <!-- </div> -->
+
+                <!-- 右边楼梯栏 -->
+                <div class="j-regionflag">
+                    <div id="rightBarNew" class="m-rightbar m-rightbarnew f-hkdn">
+                        <ul class="clearfix">
+                            <li>
+                                <a class="checkin" href="javascript:;">
+                                    <i class="right-bar-icon"></i>
+                                    <span class="txt">签到</span>
+                                    <span class="m-notice m-notice-1">
+                                        <span class="text">每日签到 <br>赢考拉豆</span>
+                                    <span class="arrow">
+                                        <span class="arr"></span>
+                                    <span class="arr1"></span>
+                                    </span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="checkin" href="javascript:;">
+                                    <i class="right-bar-icon"></i>
+                                    <span class="txt">购物车</span>
+                                    </span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="checkin" href="javascript:;">
+                                    <i class="right-bar-icon"></i>
+                                    <span class="txt">签到</span>
+                                    <span id="j-qrcode-wap" class="qrcode">
+                                        <img id="j-righ_bar_download_qr_code" class="u-img" src="https://kaola-haitao.oss.kaolacdn.com/314dd8b1-a77c-4897-bb9e-5237b9200b65T2001192035_180_180.png" alt="">
+                                        <div class="txtt">
+                                            <p class="msg">新人下载APP</p>
+                                            <p class="red">领10元满减红包</p>
+                                        </div>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="checkin last" href="javascript:;">
+                                    <i class="right-bar-icon"></i>
+                                    <span class="txt">TOP</span>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
+
+
                 <!-- 底部 -->
+                <div class="footA"></div>
                 <div class="footBgWrap">
                     <div class="box">
                         <div class="btmlist">
@@ -730,7 +1081,6 @@
                 </div>
 
 </body>
-<script src="https://cdn.bootcdn.net/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="script/index.js"></script>
+
 
 </html>

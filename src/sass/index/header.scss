@@ -34,7 +34,8 @@
     height: 40px;
     padding-left: 1px;
     background-color: #ff2337;
-    border-radius: 40px
+    border-radius: 40px;
+    position: relative;
 }
 
 #topsearch .wrap {
@@ -51,6 +52,7 @@
     line-height: 24px;
     border: 0;
     font-size: 13px;
+    outline: none;
 }
 
 #topsearch .topsearchboxBackGround {
@@ -143,6 +145,10 @@
     color: #ff1e32;
 }
 
+#funcTab .first .toplevel {
+    color: #ff1e32;
+}
+
 #funcTab .navitm {
     height: 40px;
     line-height: 40px;
@@ -196,6 +202,43 @@
     border-top: 2px solid #ddd;
     display: block;
     margin-bottom: 3px;
+}
+
+//搜索框
+.m-searchhint {
+    position: absolute;
+    top: 39px;
+    left: 10px;
+    width: 490px;
+    background-color: #fff;
+    z-index: 99;
+}
+
+.m-searchhint ul {
+    padding: 6px 0;
+    border: 1px solid #ccc;
+    border-top: none;
+    display: none;
+}
+
+.m-searchhint .item {
+    display: block;
+    position: relative;
+    height: 28px;
+    padding: 0 10px;
+    line-height: 28px;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.m-searchhint .shname {
+    display: block;
+    float: left;
+    width: 250px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #333;
 }
 
 // 顶部悬浮

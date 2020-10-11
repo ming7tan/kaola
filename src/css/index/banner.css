@@ -2,25 +2,22 @@
 .m-module {
   width: 100%;
   height: 505px;
-  position: relative;
-}
+  position: relative; }
 
 #show_pic {
   overflow: hidden;
   width: 100%;
   height: 505px;
-}
+  position: absolute; }
 
 #show_pic li {
   position: absolute;
   left: 0;
   top: 0;
-  opacity: 0;
-}
+  opacity: 0; }
 
 #show_pic li a {
-  display: block;
-}
+  display: block; }
 
 #show_pic li .showImg {
   vertical-align: middle;
@@ -28,28 +25,24 @@
   height: 505px;
   width: 1920px;
   position: absolute;
-  left: -280px;
-}
+  left: -280px; }
 
 .m-module ol {
   position: absolute;
   left: 313px;
   bottom: 82px;
   display: flex;
-  justify-content: space-around;
-}
+  justify-content: space-around; }
 
 .m-module ol li {
   width: 9px;
   height: 9px;
   border-radius: 50%;
   background: #fff;
-  margin-right: 10px;
-}
+  margin-right: 10px; }
 
 .m-module ol .active {
-  background-color: #ff1e32;
-}
+  background-color: #ff1e32; }
 
 .m-module .prev {
   display: inline-block;
@@ -60,8 +53,7 @@
   top: 50%;
   margin-top: -34px;
   background-image: url(../../images/icon-精灵图.png);
-  background-position: -625px -68px;
-}
+  background-position: -625px -68px; }
 
 .m-module .next {
   display: inline-block;
@@ -72,8 +64,7 @@
   top: 50%;
   margin-top: -34px;
   background-image: url(../../images/icon-精灵图.png);
-  background-position: -670px -67px;
-}
+  background-position: -670px -67px; }
 
 .m-sellpoint {
   position: relative;
@@ -81,13 +72,11 @@
   margin-top: -45px;
   margin-bottom: 20px;
   height: 45px;
-  background-color: rgba(0, 0, 0, 0.3);
-}
+  background-color: rgba(0, 0, 0, 0.3); }
 
 #menu {
   position: relative;
-  z-index: 999;
-}
+  z-index: 999; }
 
 #menu .catitmlst {
   z-index: 999;
@@ -96,8 +85,7 @@
   text-align: center;
   line-height: 40px;
   width: 164px;
-  background: linear-gradient(90deg, red, #ff3264);
-}
+  background: linear-gradient(90deg, red, #ff3264); }
 
 #menu .catitmlst li {
   padding-left: 10px;
@@ -106,19 +94,16 @@
   cursor: pointer;
   text-align: left;
   margin: 0 3px 0 2px;
-  border-bottom: 1px solid #ff5160;
-}
+  border-bottom: 1px solid #ff5160; }
 
 .catitmlst .icon {
   width: 20px;
   height: 20px;
   vertical-align: middle;
-  padding: 0 20px 0 4px;
-}
+  padding: 0 20px 0 4px; }
 
 .catitmlst .iconhv {
-  display: none;
-}
+  display: none; }
 
 #menu .cartlist {
   transition: height .4s;
@@ -136,26 +121,21 @@
   text-align: left;
   color: #333;
   cursor: auto;
-  display: none;
-}
+  display: none; }
 
 .item {
   padding: 20px;
   display: none;
-  color: turquoise;
-}
+  color: turquoise; }
 
 #menu .catitmlst li:hover {
   background-color: #fff;
-  color: #ff1a32;
-}
+  color: #ff1a32; }
 
 .catitmlst li:hover .icon {
-  display: none;
-}
+  display: none; }
 
 .catitmlst li:hover .iconhv {
-  display: inline-block;
-}
+  display: inline-block; }
 
 /*# sourceMappingURL=banner.css.map */

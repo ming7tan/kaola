@@ -11,7 +11,10 @@ span,
 input,
 i,
 h2,
-a {
+a,
+h3,
+h4,
+strong {
     margin: 0;
     padding: 0;
 }
@@ -131,6 +134,10 @@ img {
     transition: transform .2s ease-in;
 }
 
+.mcDropMenuBox:hover .topNavHolder .arr {
+    transform: rotate(180deg);
+}
+
 .dropmenu {
     position: relative;
 }
@@ -198,6 +205,15 @@ img {
     background-repeat: no-repeat;
 }
 
+// 添加的属性
+.dropmenu .mcDropMenuBox1 {
+    background-color: #fff;
+}
+
+.mcDropMenu .topNavHolder1 {
+    color: #ff1e32;
+}
+
 // 二级导航消失
 .mcDropMenu {
     z-index: 1000;
@@ -208,39 +224,32 @@ img {
     display: none;
 }
 
-.login:hover,
-.registry:hover,
-.phone:hover,
-.topl:hover {
-    color: #fff;
-}
-
-.topl:hover a {
-    color: #fff;
-}
-
-#topNav .phone:hover .m-notice {
-    display: block;
-}
-
-//
-.dropmenu:hover {
-    background-color: #fff;
-}
-
-.dropmenu:hover .arr {
-    border-color: transparent transparent #333;
-}
-
-.dropmenu:hover .mcDropMenu {
-    display: block;
-}
-
-.dropmenu a:hover {
-    color: #ff1e32;
-}
-
-.dropmenu a:hover .arr {
-    // z-index: 9999999;
-    background-color: transparent transparent #ff1e32;
-}
+// .login:hover,
+// .registry:hover,
+// .phone:hover,
+// .topl:hover {
+//     color: #fff;
+// }
+// .topl:hover a {
+//     color: #fff;
+// }
+// #topNav .phone:hover .m-notice {
+//     display: block;
+// }
+// //
+// .dropmenu:hover {
+//     background-color: #fff;
+// }
+// .dropmenu:hover .arr {
+//     border-color: transparent transparent #333;
+// }
+// .dropmenu:hover .mcDropMenu {
+//     display: block;
+// }
+// .dropmenu a:hover {
+//     color: #ff1e32;
+// }
+// .dropmenu a:hover .arr {
+//     // z-index: 9999999;
+//     background-color: transparent transparent #ff1e32;
+// }
