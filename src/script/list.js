@@ -17,7 +17,7 @@ define([], function() {
                     strhtml += `
                 <li class="goods colorsku">
                 <div class="goodswarp">
-                <a class="pic" href="javascript:;" target="_blank">
+                <a class="pic" href="detail.html?sid=${value.sid}" target="_blank">
                 <div class="img">
                 <img class="imgtag lazy" data-original="${value.url}">
                 <div class="activityflag">
@@ -39,7 +39,7 @@ define([], function() {
                     </span>
                 </p>
                 <div class="titlewrap">
-                    <a class="title" href="../detail.html" target="_blank">
+                    <a class="title" href="detail.html?sid=${value.sid}" target="_blank">
                     <h2>${value.title}</h2>
                     </a>
                 </div>
@@ -100,7 +100,7 @@ define([], function() {
                             strhtml += `
                         <li class="goods colorsku">
                         <div class="goodswarp">
-                        <a class="pic" href="javascript:;" target="_blank">
+                        <a class="pic" href="detail.html?sid=${value.sid}" target="_blank">
                         <div class="img">
                         <img class="imgtag lazy" data-original="${value.url}">
                         <div class="activityflag">
@@ -122,7 +122,7 @@ define([], function() {
                             </span>
                         </p>
                         <div class="titlewrap">
-                            <a class="title" href="../detail.html" target="_blank">
+                            <a class="title" href="detail.html?sid=${value.sid}" target="_blank">
                             <h2>${value.title}</h2>
                             </a>
                         </div>
@@ -217,6 +217,13 @@ define([], function() {
                 });
             });
         }(),
-
+        menuxianshi: ! function() {
+            $('#topCats').on('mouseover', function() {
+                $(this).children('#menu').css({ "display": "block" });
+            })
+            $('#topCats').on('mouseout', function() {
+                $(this).children('#menu').css({ "display": "none" });
+            })
+        }(),
     }
 })

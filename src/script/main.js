@@ -23,4 +23,5 @@ require.config({
 require(['jquery', 'jq_lazyload', 'pagination'], function() {
     require(['index']);
     require(['list']);
+    require(['detail'])
 });
