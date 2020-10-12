@@ -12,7 +12,7 @@ define([], function() {
                     strhtml += `
                     <li class="itemsale">
                     <a class="pic" href="javascript:;">
-                    <img src="${value.url}">
+                    <img class="lazy" data-original="${value.url}">
                     </a>
                     <div class="proinfo">
                     <h3 class="tit">
@@ -27,9 +27,9 @@ define([], function() {
                   `
                 })
                 $('.itemgroup').html(strhtml);
-                // $("img.lazy").lazyload({
-                //     effect: "fadeIn" //图片显示方式
-                // });
+                $("img.lazy").lazyload({
+                    effect: "fadeIn" //图片显示方式
+                });
             });
         }(),
         topeffect: ! function() { //top效果
@@ -150,34 +150,26 @@ define([], function() {
             new Lunbo().init();
         }(),
         erjimenu: ! function() { //二级菜单
-            // 1.鼠标经过li ,cartlist显示，否则隐藏
             $('#menu li').hover(function() {
                 $(this).addClass('active').siblings().removeClass('active');
                 $('.cartlist').show();
 
-                // 3.切换li元素，cartlist里面的内容跟着切换(索引匹配)
                 $('.cartlist .item').eq($(this).index()).show().siblings().hide();
 
-                // 4.切换li元素，cartlist始终全部显示
+
                 $(window).on('scroll', function() {
                     let bannertop = $('.navitm-cats').offset().top; //banner的top
-                    // let scrolltop = $(window).scrollTop(); //滚动条的top值
-                    // if (scrolltop > bannertop) {
-                    //     $('.cartlist').css({
-                    //         top: scrolltop - bannertop
-                    //     });
-                    // } else {
+
                     $('.cartlist').css({
                         top: 0
                     });
-                    // }
+
                 })
 
             }, function() {
                 $('.cartlist').hide();
             });
 
-            // 2.cartlist显示，鼠标经过cartlist，显示自身，否则隐藏
             $('.cartlist').hover(function() {
                 $(this).show();
             }, function() {
@@ -255,32 +247,25 @@ define([], function() {
                 }
                 init() {
 
-                    let _this = this; //实例对象
+                    let _this = this;
                     this.lunbo.hover(function() {
-
                         clearInterval(_this.timer);
-
                     }, function() {
-                        // _this.leftarrow.hide();
-                        // _this.rightarrow.hide();
-                        // 自动轮播
-                        // clearInterval(_this.timer);
                         _this.timer = window.setInterval(function() {
                             _this.rightarrowclick();
-                        }, 5000);
+                        }, 3000);
                     });
 
-                    // 2.点击对应的小圈圈，当前点击的小圈圈添加类名，其他隐藏(和小圈圈对应的图片显示)
                     this.btnlist.on('mouseover', function() {
-                        _this.index = $(this).index(); //将当前按钮对应的索引存储下来
+                        _this.index = $(this).index();
                         _this.tabswitch();
                     });
 
 
-                    // 4.自动轮播
+
                     this.timer = window.setInterval(function() {
                         _this.rightarrowclick();
-                    }, 2000);
+                    }, 3000);
                 }
 
 

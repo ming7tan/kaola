@@ -1,13 +1,15 @@
 @charset "UTF-8";
 .docHeadWarp {
   position: relative;
-  height: 100px; }
+  height: 100px;
+}
 
 .docHeadWarp {
   width: 1090px;
   margin: 0 auto;
   display: flex;
-  justify-content: space-around; }
+  justify-content: space-around;
+}
 
 .docHeadWarp .logo_kaola_new {
   position: absolute;
@@ -17,14 +19,16 @@
   height: 65px;
   background-image: url(../../images/logo_kaola_newX2.png);
   background-repeat: no-repeat;
-  background-size: auto 65px; }
+  background-size: auto 65px;
+}
 
 .docHeadWarp .m-searchiptbox {
   position: absolute;
   left: 343px;
   top: 33px;
   z-index: 73;
-  color: #333; }
+  color: #333;
+}
 
 #docHead #topsearch {
   width: 510px;
@@ -32,14 +36,16 @@
   padding-left: 1px;
   background-color: #ff2337;
   border-radius: 40px;
-  position: relative; }
+  position: relative;
+}
 
 #topsearch .wrap {
   float: left;
   margin: 2px 1px;
   padding: 6px 39px 5px 30px;
   background-color: #fff;
-  border-radius: 24px 0 0 24px; }
+  border-radius: 24px 0 0 24px;
+}
 
 .topSearchInput {
   width: 410px;
@@ -47,7 +53,8 @@
   line-height: 24px;
   border: 0;
   font-size: 13px;
-  outline: none; }
+  outline: none;
+}
 
 #topsearch .topsearchboxBackGround {
   width: 60px;
@@ -57,7 +64,8 @@
   border-radius: 40px;
   position: absolute;
   top: 0;
-  right: 0; }
+  right: 0;
+}
 
 #topSearchBtn {
   display: inline-block;
@@ -71,7 +79,8 @@
   position: absolute;
   top: 0;
   right: 5px;
-  background: url(../../images/search1.png) no-repeat 50%; }
+  background: url(../../images/search1.png) no-repeat 50%;
+}
 
 #topsearch .w-icon-26 {
   position: absolute;
@@ -80,7 +89,8 @@
   background-image: url(../../images/icon-精灵图.png);
   width: 14px;
   height: 14px;
-  background-position: -466px -667px; }
+  background-position: -466px -667px;
+}
 
 #j-newcart_btn {
   display: block;
@@ -95,7 +105,8 @@
   text-align: center;
   border-radius: 36px;
   border: 2px solid #ff1e32;
-  color: #333333; }
+  color: #333333;
+}
 
 #j-newcart_btn .shop-cart-icon {
   display: inline-block;
@@ -103,46 +114,55 @@
   height: 20px;
   margin-right: 2px;
   margin-bottom: -5px;
-  background-image: url(../../images/shop-cart.png); }
+  background-image: url(../../images/shop-cart.png);
+}
 
 #j-newcart_btn .wrap {
   display: inline-block;
   padding-left: 6px;
   background: none;
-  vertical-align: middle; }
+  vertical-align: middle;
+}
 
 #j-newcart_btn:hover {
   color: #ff1e32;
-  background-color: #fff4f5; }
+  background-color: #fff4f5;
+}
 
 #topTab {
   width: 1090px;
   margin: 0 auto;
   display: flex;
-  justify-content: flex-start; }
+  justify-content: flex-start;
+}
 
 #funcTab {
   display: flex;
-  justify-content: space-around; }
+  justify-content: space-around;
+}
 
 #funcTab .active .toplevel {
-  color: #ff1e32; }
+  color: #ff1e32;
+}
 
 #funcTab .first .toplevel {
-  color: #ff1e32; }
+  color: #ff1e32;
+}
 
 #funcTab .navitm {
   height: 40px;
   line-height: 40px;
   overflow: hidden;
-  padding: 0 20px; }
+  padding: 0 20px;
+}
 
 #funcTab .navitm a {
   display: block;
   text-align: center;
   font-size: 15px;
   font-weight: 700;
-  color: #000; }
+  color: #000;
+}
 
 .navitm-cats {
   float: left;
@@ -155,14 +175,16 @@
   font-size: 14px;
   text-align: center;
   padding-left: 0;
-  overflow: visible; }
+  overflow: visible;
+}
 
 #topCats .toplevel {
   z-index: 99;
   padding: 0;
   display: flex;
   justify-content: flex-start;
-  border-bottom: 1px solid #ff5160; }
+  border-bottom: 1px solid #ff5160;
+}
 
 .navitm-cats .lineicon {
   display: inline-block;
@@ -170,14 +192,16 @@
   width: 15px;
   height: 12px;
   padding-top: 14px;
-  overflow: hidden; }
+  overflow: hidden;
+}
 
 .navitm-cats .lineicon i {
   width: 15px;
   height: 0;
   border-top: 2px solid #ddd;
   display: block;
-  margin-bottom: 3px; }
+  margin-bottom: 3px;
+}
 
 .m-searchhint {
   position: absolute;
@@ -185,13 +209,15 @@
   left: 10px;
   width: 490px;
   background-color: #fff;
-  z-index: 99; }
+  z-index: 99;
+}
 
 .m-searchhint ul {
   padding: 6px 0;
   border: 1px solid #ccc;
   border-top: none;
-  display: none; }
+  display: none;
+}
 
 .m-searchhint .item {
   display: block;
@@ -200,7 +226,8 @@
   padding: 0 10px;
   line-height: 28px;
   font-size: 12px;
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 .m-searchhint .shname {
   display: block;
@@ -209,6 +236,7 @@
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  color: #333; }
+  color: #333;
+}
 
 /*# sourceMappingURL=header.css.map */
