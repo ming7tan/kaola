@@ -18,10 +18,9 @@ define([], function() {
                 },
                 dataType: 'json'
             }).done(function(data) {
-                // console.log(data);
-
                 $('#smallpic').attr('src', data.url);
                 $('#bpic').attr('src', data.url);
+                $('#smallpic').attr('sid', data.sid);
                 $('.loadtitle').html(data.title);
                 $('.loadpcp').html(data.price);
                 console.log(data.piclisturl.split(','));
@@ -107,11 +106,54 @@ define([], function() {
         }(),
         menuxianshi: ! function() {
             $('#topCats').on('mouseover', function() {
-                $(this).children('#menu').css({ "display": "block" });
+                $(this).children('.OMenu').css({ "display": "block" });
             })
             $('#topCats').on('mouseout', function() {
-                $(this).children('#menu').css({ "display": "none" });
+                $(this).children('.OMenu').css({ "display": "none" });
             })
+        }(),
+        Ccookie: ! function() {
+            var arrsid = []; //商品的sid
+            var arrnum = []; //商品的数量                
+
+
+            function getcookie() {
+                if ($.cookie('cookiesid') && $.cookie('cookienum')) { //cookie存在
+                    arrsid = $.cookie('cookiesid').split(','); //获取cookie的sid，存放到数组中。
+                    arrnum = $.cookie('cookienum').split(','); //获取cookie的数量，存放到数组中。
+                } else { //cookie不存在
+                    arrsid = [];
+                    arrnum = [];
+                }
+            }
+            $('.p-btn a').on('click', function() { //点击加入购物车按钮。
+                // location.reload(true);
+                //判断当前的商品sid是否存在购物车(cookie)
+                //判断当前的按钮对应的商品的sid和取出的cookie里面的sid进行比较
+                // alert('beidianji');
+                //获取当前的按钮对应的商品的sid
+
+                var $sid = $(this).parents('.goodsinfo').find('#smallpic').attr('sid');
+                console.log($sid)
+
+                getcookie(); //获取已经存在的cookie值
+                if (!$sid) {
+                    $sid = 1;
+                }
+                if ($.inArray($sid, arrsid) === -1) { //不存在，将商品的sid和数量存入cookie
+                    arrsid.push($sid); //添加当前商品的sid
+                    $.cookie('cookiesid', arrsid, { expires: 10, path: '/' }); //插件完成的cookie的添加。
+                    arrnum.push($('#count').val()); //添加商品的数量
+                    $.cookie('cookienum', arrnum, { expires: 10, path: '/' }); //插件完成的cookie的添加。
+                } else { //存在,商品的数量累加
+                    //获取原来的sid对应的数量(sid和数量是对应的 ，sid的在数组的位置就是数量在数组的位置)
+                    let index = $.inArray($sid, arrsid); //sid在数组中的位置
+                    let num = parseInt(arrnum[index]); //sid对应的数量
+                    //原来的数量+新添加数量，一起存入cookie
+                    arrnum[index] = num + parseInt($('#count').val()); //原来的数量+新添加数量进行赋值
+                    $.cookie('cookienum', arrnum, { expires: 10, path: '/' }); //一起存入cookie
+                }
+            });
         }(),
     }
 })

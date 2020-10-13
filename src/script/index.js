@@ -68,10 +68,12 @@ define([], function() {
                 $(this).addClass('active');
             })
             $('#funcTab .navitm').on('mouseout', function() {
-                $(this).removeClass('active');
-            })
+                    $(this).removeClass('active');
+                })
+                // $('#docHead').on('mouseover')
+
         }(),
-        lunno: ! function() { //轮播效果
+        lunbo: ! function() { //轮播效果
             class Lunbo {
                 constructor() {
                     this.lunbo = $('.m-module');
@@ -235,7 +237,7 @@ define([], function() {
                 $(this).children('.right-bar-icon').removeClass('right-bar')
             })
         }(),
-        mainlunno: ! function() { //轮播效果
+        mainlunbo: ! function() { //轮播效果
             class Lunbotu {
                 constructor() {
                     this.lunbo = $('.prolist');
@@ -324,23 +326,30 @@ define([], function() {
                 $('#searchhintlist').html(str);
             }
         }(),
+        // 顶部悬浮
+        xuanfu: ! function() {
+            $(window).on('scroll', function() {
+                let $top = $(window).scrollTop(); //滚动条顶部的偏移
+                if ($top >= 100) {
+                    $('#docHead').addClass('topTabBoxFixed')
+                    $('#topTabPlaceHolder').removeClass('f-cd');
+                    $('#j-newcart_btn').hide();
+                    $('.logo_kaola_new').hide();
+                    // $('.topTabBoxFixed').css({ "position": "fixed", "left": "0", "top": "0", "width": "100%", "height": "50px", "backgrond": "#fff", })
+                } else {
+                    $('#docHead').removeClass('topTabBoxFixed')
+                    $('#topTabPlaceHolder').removeClass('f-cd');
+                    $('#j-newcart_btn').show();
+                    $('.logo_kaola_new').show();
+                }
+            })
+        }()
+
     }
 });
 
 
 
 // 顶部悬浮
-// ! function($) {
-//     $(window).on('scroll', function() {
-//         let $top = $(window).scrollTop(); //滚动条顶部的偏移
-//         if ($top >= 200) {
-//             $('#docHead').addClass('topTabBoxFixed')
-//                 // $('.topTabBoxFixed').css({ "position": "fixed", "left": "0", "top": "0", "width": "100%", "height": "50px", "backgrond": "#fff", })
-//         } else {
-//             $('#docHead').removeClass('topTabBoxFixed')
-
-//         }
-//     })
-// }(jQuery)
 
 // 热卖品牌点击关注

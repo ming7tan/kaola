@@ -219,10 +219,10 @@ define([], function() {
         }(),
         menuxianshi: ! function() {
             $('#topCats').on('mouseover', function() {
-                $(this).children('#menu').css({ "display": "block" });
+                $(this).children('.OMenu').css({ "display": "block" });
             })
             $('#topCats').on('mouseout', function() {
-                $(this).children('#menu').css({ "display": "none" });
+                $(this).children('.OMenu').css({ "display": "none" });
             })
         }(),
     }

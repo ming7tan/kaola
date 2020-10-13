@@ -20,8 +20,9 @@ require.config({
 });
 
 //加载模块
-require(['jquery', 'jq_lazyload', 'pagination'], function() {
+require(['jquery', 'jq_lazyload', 'jq_cookie', 'pagination'], function() {
     require(['index']);
     require(['list']);
-    require(['detail'])
+    require(['detail']);
+    require(['cart'])
 });

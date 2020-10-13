@@ -3,6 +3,21 @@
     height: 100px;
 }
 
+.logo_kaola_newlt {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 5px;
+    width: 162px;
+    height: 40px;
+    line-height: 40px;
+    outline: none;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-size: auto 40px;
+    background-image: url(//kaola-haitao.oss.kaolacdn.com/271c7d10-5167-443a-afe5-9f0729964b5e.png?v=1&x-oss-process=image%2Fresize%2Cw_0%2Ch_40%2Fquality%2Cq_85);
+}
+
 .docHeadWarp {
     width: 1090px;
     margin: 0 auto;
@@ -29,7 +44,35 @@
     color: #333;
 }
 
-#docHead #topsearch {
+// 头部固定栏
+#topTabPlaceHolder {
+    height: 100px;
+    background-color: #fff;
+}
+
+.f-cd {
+    display: none;
+}
+
+.topTabBoxFixed {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    z-index: 1001;
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    .logo_kaola_newlt {
+        display: block;
+    }
+    .m-searchiptbox {
+        top: 7px;
+    }
+}
+
+#topsearch {
     width: 510px;
     height: 40px;
     padding-left: 1px;
@@ -44,6 +87,8 @@
     padding: 6px 39px 5px 30px;
     background-color: #fff;
     border-radius: 24px 0 0 24px;
+    text-align: start;
+    // float: none;
 }
 
 .topSearchInput {
