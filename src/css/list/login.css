@@ -1,0 +1,216 @@
+#docHeader {
+  border-bottom: 1px solid #e8e8ea;
+}
+
+.docHeadWarp {
+  width: 1090px;
+  height: 100px;
+  margin: 0 auto;
+  position: relative;
+}
+.docHeadWarp a {
+  width: 330px;
+  height: 65px;
+  position: absolute;
+  top: 50%;
+  margin-top: -32.5px;
+  left: 0;
+  background-image: url(//kaola-haitao.oss.kaolacdn.com/271c7d10-5167-443a-afe5-9f0729964b5e.png?v=1&x-oss-process=image%2Fresize%2Cw_210%2Ch_0%2Fquality%2Cq_85);
+  background-repeat: no-repeat;
+  background-size: auto 65px;
+}
+.docHeadWarp .u-login_topimage {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100px;
+  width: 504px;
+  background-image: url(https://kaola-haitao.oss.kaolacdn.com/30bee055-69af-4f3a-a232-5f330cbc98c1_1008_200.png?x-oss-process=image/resize,w_504,h_0/quality,q_100&v=1);
+}
+
+.web-container {
+  background-color: #f8f8f8;
+}
+.web-container .login-body {
+  position: relative;
+  margin: 0 auto;
+  width: 1000px;
+  height: 600px;
+}
+.web-container .login-body .default-img {
+  position: absolute;
+  background-image: url(//kaola-haitao.oss.kaolacdn.com/d77e243d-d78e-4e04-bf3a-f9ef46644fdd_1_1.gif);
+  left: 10px;
+  top: 50%;
+  margin-top: -101px;
+  width: 400px;
+  height: 203px;
+}
+
+.customize-havana-login {
+  position: absolute;
+  top: 110px;
+  right: 40px;
+}
+.customize-havana-login .login-wrap {
+  width: 350px;
+  font-size: 12px;
+  background-color: #fff;
+  border: 1px solid #eaeaea;
+}
+.customize-havana-login .login-wrap #hLoginbox {
+  min-height: 220px;
+}
+.customize-havana-login .login-wrap .login-content {
+  padding: 0 40px;
+}
+.customize-havana-login .login-wrap .corner-icon-view {
+  height: 64px;
+  position: relative;
+}
+.customize-havana-login .login-wrap h4 {
+  font-size: 14px;
+  color: #333;
+  position: absolute;
+  top: 33px;
+  left: 50%;
+  margin-left: -45px;
+}
+.customize-havana-login .login-wrap .login-switch-tab {
+  margin: 0 0 8px 0;
+}
+.customize-havana-login .login-wrap .login-blocks {
+  margin: 8px 0;
+  text-align: right;
+}
+.customize-havana-login .login-wrap .login-blocks a {
+  height: 14px;
+  line-height: 14px;
+  color: #666;
+  margin-left: 0;
+  font-size: 12px;
+}
+.customize-havana-login .login-wrap .login-blocks a:hover {
+  color: #e31436;
+}
+.customize-havana-login .login-wrap .block9 {
+  font-size: 13px;
+  text-align: center;
+  color: #999;
+  padding-bottom: 15px;
+}
+.customize-havana-login .login-wrap .block9 a {
+  color: #999;
+  text-decoration-line: underline;
+}
+.customize-havana-login .login-wrap .block9 a:hover {
+  color: #999;
+}
+
+.fm-phone::before {
+  content: "";
+  display: inline-block;
+  background: url(//kaola-haitao.oss.kaolacdn.com/3382020d-6ac1-4613-800b-f29459356378.png) no-repeat;
+  background-position: -34px -34px;
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  top: 9px;
+  left: 10px;
+}
+
+.fm-password::before {
+  content: "";
+  display: inline-block;
+  background: url(//kaola-haitao.oss.kaolacdn.com/3382020d-6ac1-4613-800b-f29459356378.png) no-repeat;
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  top: 9px;
+  left: 10px;
+  background-position: -68px -34px;
+}
+
+.fm-field {
+  margin-bottom: 16px;
+  position: relative;
+}
+.fm-field .fm-text {
+  height: 36px;
+  width: 233px;
+  line-height: 36px;
+  border: 1px solid #d5d5d5;
+  border-radius: 18px;
+  padding-left: 35px;
+  background-color: #fff;
+}
+
+.fm-btn {
+  width: 100%;
+}
+.fm-btn .fm-button {
+  border-radius: 18px;
+  height: 36px;
+  width: 100%;
+  line-height: 36px;
+  background-color: red;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+  background-image: none;
+  border: 0;
+}
+
+.a-bottom {
+  padding: 10px 40px;
+  height: 42px;
+  font-size: 14px;
+  border: 1px solid #efefef;
+  border-top: none;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+.a-bottom ul {
+  display: flex;
+  justify-content: center;
+}
+.a-bottom ul .thirdicon {
+  margin-right: 10px;
+  width: 22px;
+  height: 22px;
+}
+
+.thirdicon .a-icon-alipay {
+  background-position: -32px 0;
+}
+.thirdicon .a-icon-wechat {
+  background-position: -64px 0;
+}
+.thirdicon .a-icon-weibo {
+  background-position: -96px 0;
+}
+.thirdicon .a-icon-email {
+  background-position: -162px 0;
+}
+
+.a-icon {
+  display: inline-block;
+  width: 30px;
+  height: 23px;
+  background: url(https://kaola-haitao.oss.kaolacdn.com/fe663cdc-4eb9-4b2b-b587-6a97abcd8019.png) no-repeat;
+  background-size: cover;
+}
+
+#aboutNEST {
+  border-top: 1px solid #e8e8ea;
+  color: #666;
+  background-color: #fff;
+}
+#aboutNEST span {
+  color: #666;
+}
+#aboutNEST a {
+  color: #666;
+}
+
+/*# sourceMappingURL=login.css.map */
